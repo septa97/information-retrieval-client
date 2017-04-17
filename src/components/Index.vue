@@ -8,14 +8,14 @@
 
     <div class="layout-view">
       <div class="layout-padding">
-        <q-search v-model="searchQuery" @input="search"></q-search>
+        <q-search v-model="searchQuery" :debounce="1000" @input="search"></q-search>
         <table class="q-table">
           <thead>
             <tr>
-              <th>Rating</th>
-              <th>Tail</th>
-              <th>Title</th>
-              <th>Review</th>
+              <th class="text-left">Rating</th>
+              <th class="text-left">Tail</th>
+              <th class="text-left">Title</th>
+              <th class="text-left">Review</th>
             </tr>
           </thead>
           <tbody>
